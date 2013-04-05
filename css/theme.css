@@ -1,0 +1,50 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+body { line-height: 20px; font-family: 'Source Sans Pro', Arial, sans-serif; }
+h3 { line-height: 60px; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+#header { background: #111; color: #fff; }
+#header a { color: #fff; }
+#header a.logo { font-weight: 200; font-size: 30px; padding-top: 8px; display: inline-block; }
+#header a.logo:hover { text-decoration: none; }
+#header a.logo img { height: 30px; }
+
+#nav { padding: 0px; margin: 0px; list-style: none; float: right; }
+#nav li { float: left; }
+#nav li a { padding: 10px 5px 13px 5px; display: inline-block; font-weight: 400; font-size: 14px; }
+#nav li a:hover { background: #555; text-decoration: none; }
+
+#intro { background: #F3F0EB; border-bottom: 1px dashed #aaa; padding: 20px 0px; text-align: center; height: 350px; overflow: hidden; }
+#intro h2 { font-size: 40px; font-weight: 200; color: #444; padding: 10px 0px; font-style: italic; }
+#intro h2 span { font-weight: 900; border-bottom: 1px dotted #222; }
+#intro img { /*box-shadow: rgba(200,200,200,1) 0 0px 30px;*/ width: 800px; }
+
+
+h3 { font-weight: 200; margin: 30px 0px; text-align: center; font-size: 42px; border-bottom: 1px solid #ccc; }
+
+#tech { margin-top: 0px; }
+#tech .grid_3 { text-align: center; }
+#tech img { width: 125px; height: 125px; }
+#tech p { font-weight: 300; font-size: 16px; margin-top: 5px; }
+#tech p a,
+#community p a { font-weight: bold; color: #333; }
+
+#community { background: #F3F0EB; border-top: 1px dashed #aaa; margin-top: 30px; padding-bottom: 30px; }
+#community h3 { }
+#community .grid_4 { text-align: center; }
+#community .github img { width: 125px; }
+#community .lighthouse img { background: #000; padding: 5px; border-radius: 4px; }
+#community .google-group img { height: 55px; }
+#community p { margin-top: 20px; font-weight: 300; font-size: 16px; }
+
+
+#footer { background: #333; color: #fff; font-size: 14px; font-weight: 400; padding: 5px 0px; }
+#footer a { color: #fff; }
+#footer #links a { display: inline-block; margin-right: 10px; }
+#footer #connect { text-align: right; }
+#footer #connect a { display: inline-block; margin-left: 10px; }
+
+
+
