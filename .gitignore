@@ -1,0 +1,18 @@
+# App
+Config/croogo.php
+Config/database.php
+Config/settings.json
+webroot/uploads/
+Vendor/autoload.php
+Vendor/bin
+Vendor/composer
+Vendor/croogo
+Vendor/pear-pear.cakephp.org
+*.bak
+*.swp
+
+# Cake cache
+tmp/
+
+# Others
+.DS_Store
