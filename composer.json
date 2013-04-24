@@ -1,0 +1,46 @@
+{
+	"name": "croogo/app",
+	"description": "Croogo skeleton app",
+	"homepage": "http://github.com/croogo/app",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Fahad Ibnay Heylall",
+			"email": "contact@fahad19.com",
+			"homepage": "http://fahad19.com"
+		},
+		{
+			"name": "Rachman Chavik",
+			"email": "contact@xintesa.com",
+			"homepage": "http://xintesa.com"
+		},
+		{
+			"name": "Kyle Robinson Young",
+			"email": "kyle@dontkry.com",
+			"homepage": "http://dontkry.com"
+		}
+	],
+	"minimum-stability": "dev",
+	"config": {
+		"vendor-dir": "Vendor"
+	},
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "cakephp/cakephp",
+				"version": "2.3.5",
+				"dist": {
+					"url": "https://github.com/cakephp/cakephp/archive/2.3.5.zip",
+					"type": "zip"
+				},
+				"include-path": ["lib/"]
+			}
+		}
+	],
+	"require": {
+		"php": ">=5.3.10",
+		"croogo/croogo": "dev-1.6-vendorization",
+		"cakephp/cakephp": "~2.3"
+	}
+}
