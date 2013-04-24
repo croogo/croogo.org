@@ -48,6 +48,9 @@
  * Inflector::rules('plural', array('rules' => array(), 'irregular' => array(), 'uninflected' => array()));
  *
  */
+App::build(array(
+	'Plugin' => array(APP . 'Vendor' . DS . 'croogo' . DS . 'croogo' . DS),
+), App::PREPEND);
 CakePlugin::load('Croogo', array('bootstrap' => true));
 
 Configure::write('Dispatcher.filters', array(
