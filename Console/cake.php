@@ -29,8 +29,13 @@ foreach ($paths as $path) {
 }
 
 if (!$found && function_exists('ini_set')) {
-	$root = dirname(dirname(dirname(__FILE__)));
-	ini_set('include_path', $root . $ds . 'lib' . PATH_SEPARATOR . ini_get('include_path'));
+	$appDir = dirname(dirname(__FILE__));
+	$root = dirname($appDir);
+	ini_set('include_path',
+		$root . $ds . 'lib' . PATH_SEPARATOR .
+		$appDir . $ds . 'Vendor' . $ds . 'cakephp' . $ds . 'cakephp' . $ds . 'lib' . PATH_SEPARATOR .
+		ini_get('include_path')
+	);
 }
 
 if (!include ($dispatcher)) {
