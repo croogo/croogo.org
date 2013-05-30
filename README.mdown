@@ -1,0 +1,32 @@
+# Croogo
+
+[**Croogo**](http://croogo.org) is a free, open source, content management system for PHP, released under [MIT License](http://github.com/croogo/croogo/blob/master/LICENSE.txt).
+
+This repository contains the skeleton files that can be used as the base of
+your application.
+
+## Requirements
+
+* Apache with `mod_rewrite`
+* PHP 5.3 or higher
+* MySQL 4.1 or higher
+
+## Installation
+
+To create a new Croogo project using [composer](http://getcomposer.org):
+
+	composer create-project croogo/croogo-app app
+	cd app
+	composer install
+
+The above commands will setup an `app` directory with the necessary files for
+a Croogo project.  The default setup in `composer.json` includes:
+
+* Croogo ~1.6, installed in Vendor/croogo/croogo
+* CakePHP ~2.3, installed in Vendor/pear-pear.cakephp.org/CakePHP
+
+To configure your Croogo application:
+
+	Console/cake install.install
+
+Alternatively, you can also use the installer from the browser.
