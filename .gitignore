@@ -7,7 +7,7 @@ Vendor/autoload.php
 Vendor/bin
 Vendor/composer
 Vendor/croogo
-Vendor/pear-pear.cakephp.org
+Vendor/cakephp
 *.bak
 *.swp
 
