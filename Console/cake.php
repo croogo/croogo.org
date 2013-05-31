@@ -30,12 +30,19 @@ foreach ($paths as $path) {
 
 if (!$found && function_exists('ini_set')) {
 	$appDir = dirname(dirname(__FILE__));
+	$vendorDir = $appDir . $ds . 'Vendor' . $ds;
 	$root = dirname($appDir);
 	ini_set('include_path',
 		$root . $ds . 'lib' . PATH_SEPARATOR .
-		$appDir . $ds . 'Vendor' . $ds . 'cakephp' . $ds . 'cakephp' . $ds . 'lib' . PATH_SEPARATOR .
+		$vendorDir . 'cakephp' . $ds . 'cakephp' . $ds . 'lib' . PATH_SEPARATOR .
 		ini_get('include_path')
 	);
+
+	if (in_array('test', $argv) && in_array('croogo', $argv) && !defined('TESTS')) {
+		$key = array_keys($argv, 'croogo');
+		$argv[current($key)] = 'app';
+		define('TESTS', $vendorDir . 'croogo' . $ds . 'croogo' . $ds . 'Test' . $ds);
+	}
 }
 
 if (!include ($dispatcher)) {
