@@ -49,8 +49,8 @@
  *
  */
 App::build(array(
-	'Plugin' => array(APP . 'Vendor' . DS . 'croogo' . DS . 'croogo' . DS),
-), App::PREPEND);
+	'Plugin' => array(APP . 'Vendor' . DS . 'croogo' . DS . 'croogo' . DS ),
+), App::APPEND);
 CakePlugin::load('Croogo', array('bootstrap' => true));
 
 Configure::write('Dispatcher.filters', array(
