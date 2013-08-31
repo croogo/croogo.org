@@ -1,8 +1,8 @@
 {
-	"title": "Croogo",
-	"name": "croogo",
-	"version": "1.6",
-	"dependencies": {},
-	"devDependencies": {},
-	"resolutions": {}
+  "title": "Croogo",
+  "dependencies": [],
+  "devDependencies": {
+    "bootstrap": "2.3.x",
+    "font-awesome": "3.2.x"
+  }
 }

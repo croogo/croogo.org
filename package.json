@@ -1,12 +1,14 @@
 {
-	"title": "Croogo",
-	"name": "croogo",
-	"version": "1.6",
+	"title": "Croogo App",
 	"dependencies": {
 		"bower": "1.2.x",
 		"grunt-cli": "0.1.x",
 		"grunt": "0.4.x",
-		"grunt-shell": "0.3.x"
+		"load-grunt-tasks": "~0.1.0"
 	},
-	"devDependencies": {}
+	"devDependencies": {
+		"grunt-shell": "0.3.x",
+		"grunt-contrib-less": "0.5.x",
+		"grunt-contrib-concat": "0.2.x"
+	}
 }
