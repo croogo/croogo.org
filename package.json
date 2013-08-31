@@ -1,0 +1,12 @@
+{
+	"title": "Croogo",
+	"name": "croogo",
+	"version": "1.6",
+	"dependencies": {
+		"bower": "1.2.x",
+		"grunt-cli": "0.1.x",
+		"grunt": "0.4.x",
+		"grunt-shell": "0.3.x"
+	},
+	"devDependencies": {}
+}
