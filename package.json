@@ -1,5 +1,10 @@
 {
 	"title": "Croogo App",
+	"name": "croogo-app",
+	"repository": {
+    "type": "git",
+    "url": "git://github.com/croogo/app.git"
+  },
 	"dependencies": {
 		"bower": "1.2.x",
 		"grunt-cli": "0.1.x",
