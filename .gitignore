@@ -11,6 +11,11 @@ Vendor/cakephp
 *.bak
 *.swp
 
+# Packages
+cookbooks/
+node_modules/
+webroot/vendors/
+
 # Cake cache
 tmp/
 
