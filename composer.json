@@ -40,7 +40,7 @@
 	],
 	"require": {
 		"php": ">=5.3.10",
-		"croogo/croogo": "vagrant",
+		"croogo/croogo": "dev-vagrant",
 		"cakephp/cakephp": "~2.3"
 	}
 }
