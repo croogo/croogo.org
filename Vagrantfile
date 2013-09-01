@@ -73,6 +73,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, :inline => "cd /vagrant && make bower"
   config.vm.provision :shell, :inline => "cd /vagrant && make build"
   config.vm.provision :shell, :inline => "cd /vagrant && make nginx"
+  config.vm.provision :shell, :inline => "cd /vagrant && make php"
 
   ##
   # Create database (move this to cookbook level)

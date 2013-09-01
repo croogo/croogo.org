@@ -23,3 +23,10 @@ nginx:
 	sudo cp /vagrant/etc/development/nginx/nginx.conf /etc/nginx/nginx.conf
 	sudo cp /vagrant/etc/development/nginx/sites-enabled/croogo /etc/nginx/sites-enabled/croogo
 	sudo service nginx restart
+
+php:
+	sudo cp /vagrant/etc/development/php5/fpm/php.ini /etc/php5/fpm/php.ini
+	sudo cp /vagrant/etc/development/php5/fpm/php-fpm.conf /etc/php5/fpm/php-fpm.conf
+	sudo /usr/sbin/php5-fpm -c /etc/php5/fpm/php-fpm.conf -t
+	([ -x /etc/init.d/php5-fpm ] && sudo /etc/init.d/php5-fpm start)
+	([ -x /etc/init.d/php5-fpm ] && sudo /etc/init.d/php5-fpm reload)
