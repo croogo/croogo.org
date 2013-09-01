@@ -37,7 +37,7 @@ Make sure you have Vagrant with VirtualBox already installed in your machine fir
 
 Then follow these steps:
 
-    $ git clone git://github.com/fahad19/app.git
+    $ git clone git://github.com/croogo/app.git
     $ cd app
     $ gem install librarian-chef
     $ librarian-chef install
