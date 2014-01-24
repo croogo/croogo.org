@@ -24,20 +24,6 @@
 	"config": {
 		"vendor-dir": "Vendor"
 	},
-	"repositories": [
-		{
-			"type": "package",
-			"package": {
-				"name": "cakephp/cakephp",
-				"version": "2.4.3",
-				"dist": {
-					"url": "https://github.com/cakephp/cakephp/archive/2.4.3.zip",
-					"type": "zip"
-				},
-				"include-path": ["lib/"]
-			}
-		}
-	],
 	"require": {
 		"php": ">=5.3.10",
 		"croogo/croogo": "1.6.*@dev",
