@@ -22,8 +22,24 @@ To create a new Croogo project using [composer](http://getcomposer.org):
 The above commands will setup an `app` directory with the necessary files for
 a Croogo project.  The default setup in `composer.json` includes:
 
-* Croogo ~1.6, installed in Vendor/croogo/croogo
-* CakePHP ~2.3, installed in Vendor/pear-pear.cakephp.org/CakePHP
+* Croogo ~2.x, installed in Vendor/croogo/croogo
+* CakePHP ~2.4, installed in Vendor/cakephp/cakephp
+
+To configure your Croogo application:
+
+	Console/cake install.install
+
+Alternatively, you can also use the installer from the browser.
+
+## Installation using git
+
+You can use `git` to setup your Croogo project:
+
+	git clone http://github.com/croogo/app app
+	cd app && Console/add_submodules
+
+The above commands will setup an `app` directory with all the necessary
+submodules registered.
 
 To configure your Croogo application:
 
