@@ -1,0 +1,15 @@
+[submodule "Vendor/cakephp/cakephp"]
+	path = Vendor/cakephp/cakephp
+	url = http://github.com/cakephp/cakephp
+[submodule "Vendor/croogo/croogo"]
+	path = Vendor/croogo/croogo
+	url = http://github.com/croogo/croogo
+[submodule "Plugin/Ckeditor"]
+	path = Plugin/Ckeditor
+	url = http://github.com/croogo/Ckeditor
+[submodule "Plugin/Migrations"]
+	path = Plugin/Migrations
+	url = http://github.com/CakeDC/migrations
+[submodule "Plugin/Search"]
+	path = Plugin/Search
+	url = http://github.com/CakeDC/search

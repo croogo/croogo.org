@@ -1,0 +1,50 @@
+#!/usr/bin/env php
+<?php
+
+// Utility script to setup submodules for new projects
+// Running this script is optional and is not applicable
+// for composer users.
+
+$repos = array(
+	'cakephp' => array(
+		'url' => 'http://github.com/cakephp/cakephp',
+		'target' => 'Vendor/cakephp/cakephp',
+		'branch' => 'master',
+	),
+	'croogo' => array(
+		'url' => 'http://github.com/croogo/croogo',
+		'target' => 'Vendor/croogo/croogo',
+		'branch' => '2.0',
+	),
+	'Ckeditor' => array(
+		'url' => 'http://github.com/croogo/Ckeditor',
+		'target' => 'Plugin/Ckeditor',
+		'branch' => 'master',
+	),
+	'migrations' => array(
+		'url' => 'http://github.com/CakeDC/migrations',
+		'target' => 'Plugin/Migrations',
+		'branch' => '2.2.3',
+	),
+	'search' => array(
+		'url' => 'http://github.com/CakeDC/search',
+		'target' => 'Plugin/Search',
+		'branch' => '2.2.1',
+	),
+);
+
+foreach ($repos as $repo => $config) {
+	if (file_exists($config['target'])) {
+		echo "Skipping $config[target] since it already exists.\n";
+		continue;
+	}
+	$cmd = sprintf('git submodule add -f %s %s && git --git-dir %s/.git --work-tree %s checkout -f %s',
+		escapeshellarg($config['url']),
+		escapeshellarg($config['target']),
+		escapeshellarg($config['target']),
+		escapeshellarg($config['target']),
+		escapeshellarg($config['branch'])
+	);
+	echo "$cmd\n";
+	passthru($cmd);
+}
