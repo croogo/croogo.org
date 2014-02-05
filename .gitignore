@@ -1,1 +1,19 @@
+# App
+Config/croogo.php
+Config/database.php
+Config/settings.json
+webroot/uploads/
+Vendor/
+*.bak
+*.swp
+
+# Packages
+cookbooks/
+node_modules/
+webroot/vendors/
+
+# Cake cache
+tmp/
+
+# Others
 .DS_Store

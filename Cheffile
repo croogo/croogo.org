@@ -1,0 +1,19 @@
+# encoding: utf-8
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook "apt", {:github=>"opscode-cookbooks/apt", :ref=>"1.10.0"}
+cookbook "build-essential", {:ref=>"1.4.0"}
+cookbook "curl", {}
+cookbook "database", {:github=>"opscode-cookbooks/database"}
+cookbook "git", {}
+cookbook "mysql", {:github=>"opscode-cookbooks/mysql", :ref=>"3.0.0"}
+cookbook "nginx", {:version=>"1.7.0"}
+cookbook "nodejs", {:github=>"mdxp/nodejs-cookbook"}
+cookbook "php", {:github=>"fahad19/cookbook-php"}
+cookbook "php-fpm", {:version=>"0.4.6"}
+cookbook "phpunit", {:version=>"0.0.9"}
+cookbook "powershell", {:github=>"fahad19/cookbook-powershell"}
+cookbook "rvm", {:github=>"fnichol/chef-rvm", :ref=>"v0.9.0"}
+cookbook "users", {:github=>"opscode-cookbooks/users"}
+cookbook "vim", {:version=>"1.0.2"}
