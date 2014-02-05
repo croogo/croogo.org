@@ -8,13 +8,11 @@
 $repos = array(
 	'cakephp' => array(
 		'url' => 'http://github.com/cakephp/cakephp',
-		//'url' => 'git@git.xintesa.com:mirror/cakephp',
 		'target' => 'Vendor/cakephp/cakephp',
 		'branch' => 'master',
 	),
 	'croogo' => array(
 		'url' => 'http://github.com/croogo/croogo',
-		//'url' => 'git@git.xintesa.com:mirror/croogo',
 		'target' => 'Vendor/croogo/croogo',
 		'branch' => '2.0',
 	),
