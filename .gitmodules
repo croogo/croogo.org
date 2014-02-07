@@ -13,3 +13,6 @@
 [submodule "Plugin/Search"]
 	path = Plugin/Search
 	url = http://github.com/CakeDC/search
+[submodule "Croogo-Theme"]
+	path = View/Themed/Croogo
+	url = git@bitbucket.org:croogo/croogo-theme
