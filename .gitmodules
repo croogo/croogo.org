@@ -13,3 +13,15 @@
 [submodule "Plugin/Search"]
 	path = Plugin/Search
 	url = http://github.com/CakeDC/search
+[submodule "Bloogo"]
+	path = View/Themed/Bloogo
+	url = git://bitbucket.org:croogo/Bloogo-Theme
+[submodule "Croogo-Theme"]
+	path = View/Themed/Croogo
+	url = git://bitbucket.org:croogo/Croogo-Theme
+[submodule "Sites"]
+	path = Plugin/Sites
+	url = http://github.com/rchavik/Sites
+[submodule "SeoLite"]
+	path = Plugin/SeoLite
+	url = http://github.com/xintesa/SeoLite
