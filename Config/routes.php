@@ -26,8 +26,8 @@
  * @license       http://www.opensource.org/licenses/mit-license.php The MIT License
  */
 App::uses('CroogoRouter', 'Croogo.Lib');
-CakePlugin::routes();
-Router::parseExtensions('json', 'rss');
+
+Croogo::dispatchEvent('Croogo.startRoutes ');
 
 CroogoRouter::connect('/support/*', array(
 	'plugin' => 'nodes',
@@ -36,6 +36,9 @@ CroogoRouter::connect('/support/*', array(
 	'slug' => 'support',
 	'type' => 'page',
 ));
+
+CakePlugin::routes();
+Router::parseExtensions('json', 'rss');
 
 CroogoRouter::localize();
 require CAKE . 'Config' . DS . 'routes.php';
