@@ -27,7 +27,7 @@
  */
 App::uses('CroogoRouter', 'Croogo.Lib');
 
-Croogo::dispatchEvent('Croogo.startRoutes ');
+Croogo::dispatchEvent('Sites.startRoutes');
 
 CroogoRouter::connect('/support/*', array(
 	'plugin' => 'nodes',

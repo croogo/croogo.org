@@ -15,10 +15,10 @@
 	url = http://github.com/CakeDC/search
 [submodule "Bloogo"]
 	path = View/Themed/Bloogo
-	url = git://bitbucket.org:croogo/Bloogo-Theme
+	url = https://bitbucket.org:croogo/Bloogo-Theme
 [submodule "Croogo-Theme"]
 	path = View/Themed/Croogo
-	url = git://bitbucket.org:croogo/Croogo-Theme
+	url = https://bitbucket.org:croogo/Croogo-Theme
 [submodule "Sites"]
 	path = Plugin/Sites
 	url = http://github.com/rchavik/Sites
