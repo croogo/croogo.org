@@ -25,3 +25,6 @@
 [submodule "SeoLite"]
 	path = Plugin/SeoLite
 	url = http://github.com/xintesa/SeoLite
+[submodule "Analytics"]
+	path = Plugin/Analytics
+	url = http://github.com/rchavik/analytics
